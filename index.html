@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Lucy ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;height:100vh;overflow:hidden;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#ff5b99,#ffd6e7);font-family:Arial,sans-serif;color:#fff}
+.card{width:96vw;height:96vh;background:rgba(255,255,255,.18);backdrop-filter:blur(12px);border-radius:24px;padding:20px;display:flex;flex-direction:column}
+.content{flex:1;overflow:auto}.actions{height:80px;display:flex;justify-content:center;align-items:center}
+button{padding:14px 28px;border:none;border-radius:30px;font-size:20px;font-weight:bold;cursor:pointer}
+#yes{background:#ff0066;color:#fff}#no{background:#fff;color:#ff0066;position:fixed}
+</style></head><body>
+<div class="card"><div class="content">
+<h1 style="text-align:center">Dear Lucy ❤️</h1>
+<p>Sometimes life surprises us by bringing someone into our world who quietly changes everything. I never imagined that one person could make ordinary days feel so much brighter, but then I got to know you.</p>
+<p>Your smile has a way of making worries disappear. Your kindness reminds me that there are still genuinely beautiful people in this world. Every conversation we share, every laugh, and every little moment together has become something I treasure.</p>
+<p>You may not realize it, but you've become one of the first people I think about when I wake up and one of the last people on my mind before I sleep. Somehow, without even trying, you've become a very special part of my life.</p>
+<p>I don't promise perfection because nobody is perfect. There will be days when life is challenging, when things don't go as planned, and when we both have obstacles to overcome. But what I can promise is honesty, loyalty, respect, support, and someone who will always want to see you smile.</p>
+<p>I want to celebrate your victories with you, encourage you when things become difficult, and remind you every day just how amazing you are. I want to be someone you can trust, someone who listens, someone who believes in your dreams as much as you do.</p>
+<p>Whenever I imagine the future, I can't help but wonder what it would be like if we created beautiful memories together—sharing adventures, laughing over silly things, supporting one another, and growing together one step at a time.</p>
+<p>You've inspired me more than you probably know. Because of you, I've smiled more, hoped more, and believed more. Thank you for simply being yourself.</p>
+<p>So today, I'm choosing to be brave and follow my heart.</p>
+<p>No matter what your answer is, I'll always respect you and appreciate the wonderful person you are. But if your heart feels even a little like mine does...</p>
+<p><b>I would be incredibly happy if you gave us a chance to write our own beautiful story together.</b></p>
+<h2 style="text-align:center">Lucy...</h2><h1 style="text-align:center">Will you make me the happiest man alive by becoming my girlfriend? ❤️🌹</h1>
+</div><div class="actions"><button id="yes">YES ❤️</button><button id="no">NO 💔</button></div></div>
+<script>
+const yes=document.getElementById('yes'),no=document.getElementById('no');
+function place(){const r=yes.getBoundingClientRect();const a=Math.random()*Math.PI*2,rad=220+Math.random()*180;let x=r.left+r.width/2+Math.cos(a)*rad-no.offsetWidth/2,y=r.top+r.height/2+Math.sin(a)*rad-no.offsetHeight/2;x=Math.max(10,Math.min(innerWidth-no.offsetWidth-10,x));y=Math.max(10,Math.min(innerHeight-no.offsetHeight-10,y));no.style.left=x+'px';no.style.top=y+'px';}
+setTimeout(place,100);document.addEventListener('mousemove',e=>{const b=no.getBoundingClientRect();if(Math.hypot(e.clientX-(b.left+b.width/2),e.clientY-(b.top+b.height/2))<150){no.style.transition='all .05s';place();}});
+yes.onclick=()=>location.href='https://wa.me/254753090452?text='+encodeURIComponent('Yes ❤️ I will be your girlfriend! 🥰');
+</script></body></html>
